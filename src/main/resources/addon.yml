@@ -1,0 +1,4 @@
+name: NotAddon
+version: 1.0.0
+main: minute.notaddon.NotAddon
+displayName: §cNotAddon (애드온 아님!)
