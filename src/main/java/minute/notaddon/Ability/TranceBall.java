@@ -53,14 +53,15 @@ public class TranceBall extends AbilityBase implements ActiveHandler {
 
     AbstractGame.Participant.ActionbarNotification.ActionbarChannel cc = newActionbarChannel();
 
-    private final Cooldown cool = new Cooldown(COOLDOWN.getValue(), "이동", CooldownDecrease._100);
+    private final Cooldown cool = new Cooldown(COOLDOWN.getValue(), "이동", CooldownDecrease._25);
     private final Vector addVector = new Vector(0, 1, 0);
+    private final Particle.DustOptions limeDust = new Particle.DustOptions(Color.LIME, 1);
     private final AbilityTimer passive = new AbilityTimer() {
         @Override
         public void run(int count) {
             if (savedLoc != null) {
                 String str = "§a월드 §6: §b" + worldInfo(savedLoc.getWorld().getEnvironment()) + "§a, X §6: §b" + Math.round(savedLoc.getX()) + "§a, Y §6: §b" + Math.round(savedLoc.getY()) + "§a, Z §6: §b" + Math.round(savedLoc.getZ());
-                savedLoc.getWorld().spawnParticle(Particle.REDSTONE, savedLoc.clone().add(addVector), 300, 0.2, 0.2, 0.2, 0.05, new Particle.DustOptions(Color.LIME, 1));
+                savedLoc.getWorld().spawnParticle(Particle.REDSTONE, savedLoc.clone().add(addVector), 300, 0.2, 0.2, 0.2, 0.05, limeDust);
                 savedLoc.getWorld().spawnParticle(Particle.SMOKE_NORMAL, savedLoc.clone().add(addVector), 150, 0.2, 0.2, 0.2, 0.05);
                 cc.update(str);
             }

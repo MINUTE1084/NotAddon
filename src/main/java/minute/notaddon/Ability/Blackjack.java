@@ -53,7 +53,7 @@ public class Blackjack extends AbilityBase implements ActiveHandler {
             };
 
     private int currentNumber = 0;
-    private final Cooldown cool = new Cooldown(COOLDOWN.getValue(), "블랙잭", CooldownDecrease._100);
+    private final Cooldown cool = new Cooldown(COOLDOWN.getValue(), "블랙잭", CooldownDecrease._25);
     private final Particle.DustOptions blackjackDust = new Particle.DustOptions(Color.ORANGE, 1);
     private final Particle.DustOptions oddDust = new Particle.DustOptions(Color.AQUA, 1);
     private final Particle.DustOptions evenDust = new Particle.DustOptions(Color.LIME, 1);

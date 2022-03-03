@@ -48,7 +48,7 @@ public class OutsideWorld extends AbilityBase {
                 }
             };
 
-    private final Cooldown cool = new Cooldown(COOLDOWN.getValue(), "세상 밖", CooldownDecrease._100);
+    private final Cooldown cool = new Cooldown(COOLDOWN.getValue(), "세상 밖", CooldownDecrease._25);
     private final Vector addVector = new Vector(0, 1, 0);
     private final AbilityTimer move = new AbilityTimer(18) {
         @Override
