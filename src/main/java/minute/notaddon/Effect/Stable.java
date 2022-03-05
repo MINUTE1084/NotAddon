@@ -7,7 +7,6 @@ import daybreak.abilitywar.game.manager.effect.registry.EffectManifest;
 import daybreak.abilitywar.game.manager.effect.registry.EffectRegistry;
 import daybreak.abilitywar.utils.base.concurrent.TimeUnit;
 import org.bukkit.Bukkit;
-import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.HandlerList;
 import org.bukkit.event.Listener;
@@ -15,12 +14,11 @@ import org.bukkit.event.entity.EntityRegainHealthEvent;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
-import java.util.Collection;
 import java.util.function.Predicate;
 
 @EffectManifest(name = "안정", displayName = "§d안정", method = ApplicationMethod.UNIQUE_LONGEST, type = {
 }, description = {
-        "회복 효과가 100% 증가합니다.",
+        "회복 효율이 100% 증가합니다.",
         "불안정, 신속을 제외한 모든 효과를 제거합니다.",
         "신속 1을 부여받습니다."
 })

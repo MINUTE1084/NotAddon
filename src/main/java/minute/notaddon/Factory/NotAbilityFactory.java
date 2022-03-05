@@ -20,6 +20,10 @@ public class NotAbilityFactory {
         registerAbility(TranceBall.class);
         registerAbility(StarForce.class);
         registerAbility(Multiverse.class);
+        registerAbility(LastHit.class);
+        registerAbility(QuestionMaster.class);
+        registerAbility(Tanker.class);
+        registerAbility(Warlock.class);
     }
 
     public static void registerAbility(Class<? extends AbilityBase> clazz) {

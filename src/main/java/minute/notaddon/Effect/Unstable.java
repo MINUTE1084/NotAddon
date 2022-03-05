@@ -22,7 +22,7 @@ import java.util.function.Predicate;
 
 @EffectManifest(name = "불안정", displayName = "§c불안정", method = ApplicationMethod.UNIQUE_LONGEST, type = {
 }, description = {
-        "안정 효과를 제거하며, 회복 효과가 50% 감소합니다.",
+        "안정 효과를 제거하며, 회복 효율이 50% 감소합니다.",
         "아이템 슬롯이 0.1초마다 무작위로 바뀝니다.",
         "화면이 불안정해집니다. (멀미 1)"
 })
